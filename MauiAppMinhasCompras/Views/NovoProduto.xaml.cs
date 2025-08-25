@@ -26,7 +26,7 @@ namespace MauiAppMinhasCompras.Views
 
             }catch(Exception ex)
             {
-                await DisplayAlert("ops", ex.Message, "ok");
+                await DisplayAlert("opss", ex.Message, "ok");
             }
         }
     }
