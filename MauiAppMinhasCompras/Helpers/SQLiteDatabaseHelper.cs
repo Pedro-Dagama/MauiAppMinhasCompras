@@ -29,10 +29,10 @@ namespace MauiAppMinhasCompras.Helpers
             return _conn.Table<Produto>().DeleteAsync(i => i.Id == id);
         }
 
-        public Task<List<Produto>> getAll() {
+        public Task<List<Produto>> GetAll() {
             return _conn.Table<Produto>().ToListAsync();
         }
-        public Task<List<Produto>> Seach(string q) { 
+        public Task<List<Produto>> Search(string q) { 
 
             string sql = "SELECT * FROM Produto WHERE Descricao LIKE '%" + q + "%'";
             return _conn.QueryAsync<Produto>(sql);
